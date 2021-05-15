@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pageNum++;
         newPost.id = pageNum;
         newPost.addEventListener('click', () => {
-          setState({name: 'entry', id: newPost.id});
+          setState({name: 'entry', id: newPost.id}, false);
         });
         document.querySelector('main').appendChild(newPost);
       });
