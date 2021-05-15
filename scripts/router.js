@@ -67,6 +67,6 @@ router.setState = function(state, backward) {
 
     newJournal.entry = document.getElementById(id).entry;
     body.removeChild(document.getElementsByTagName("entry-page")[0]);
-    body.appendChild(newEntry);
+    body.appendChild(newJournal);
   }
 }
