@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         let newPost = document.createElement('journal-entry');
         newPost.entry = entry;
-        pageNum++;
         newPost.id = pageNum;
+        pageNum++;
         newPost.addEventListener('click', () => {
           setState({name: 'entry', id: newPost.id}, false);
         });
